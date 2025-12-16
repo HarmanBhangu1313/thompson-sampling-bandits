@@ -26,7 +26,7 @@ The project is implemented on a simulated **ad selection (CTR optimization)** ta
 
 ##  Project Structure
 thompson-sampling-bandits/
-|── thompson_sampling.py
+|── thompson_sampling.ipynb
 ├── dataset.csv
 |── README.md
 |-- requirements.txt

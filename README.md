@@ -46,15 +46,14 @@ thompson-sampling-bandits/
 ##  Algorithm Intuition (Thompson Sampling)
 For Bernoulli rewards, each arm’s success probability is modeled using a **Beta distribution**:
 
-\[
-p_i \sim \text{Beta}(\alpha_i, \beta_i)
-\]
+P   ~ Beta( ⍺  , β  )
+ i           i    i
 
 At each step, a probability is sampled from each posterior, and the arm with the highest sample is selected.
 
 Posterior parameters are updated as:
-- \(\alpha_i = \alpha_i + 1\) for a success
-- \(\beta_i = \beta_i + 1\) for a failure
+-  ⍺(i) number of observed successes +1
+-  β(i) number of observed failures +1
 
 This probabilistic sampling naturally balances **exploration and exploitation** without explicit tuning parameters.
 
